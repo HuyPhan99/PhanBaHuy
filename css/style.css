@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+}
+.clear {
+	clear: both;
+}
+#wrapper {
+	width: 1280px;
+	height: 2000px;
+	background: #FFFFFF;
+	margin: 0px auto;
+}
+#main_menu {
+	background: #ffff;
+	margin-top: 0px;
+	margin-left: 210px;
+}
+#main_menu>ul>li {
+	float: left;
+	padding: 15px 80px;
+	position: relative;
+	border-right: 1px solid;
+}
+#main_menu>ul>li>ul {
+	display: none;
+	position: absolute;
+	background: #FFFFFF;
+	top: 50px;
+	left: 0px;
+	width: 200px;
+	z-index: 99;
+}
+#main_menu>ul>li:hover ul {
+	display: block;
+}
+#main_menu ul li:hover {
+	background: gray;
+	transition: all 0.25s;
+}
+#main_menu>ul>li>ul>li {
+	padding: 20px 50px;
+}
+#main_menu>ul>li>ul>li {
+	border-bottom: 1px solid #FFFFFF;
+}
+#logo_1 {
+	margin-left: 65px;
+}
+#sanphamgiay {
+	text-align: center;
+	margin-top: 60px;
+}
+#hanggiay {
+	display: flex;
+	padding-left: 190px;
+}
+#hanggiay1 {
+	display: flex;
+	padding-left: 190px;
+}
+#footer-contact {
+	border-top: solid 1px #000000;
+	color: #000000;
+	margin-top: 100px;
+	height: 100px;
+	line-height: 20px;
+}
+#logo-footer {
+	float: right;
+}
+.giaybay
+{
+	animation: bay 3s linear infinite;
+}
+@keyframes bay 
+{
+  0% { transform: translateY(0px)}
+  25% { transform: translateY(20px)}
+  50% { transform: translateY(60px)}
+  75% { transform: translateY(20px)}
+  100% { transform:translateY(0px)}
+}
